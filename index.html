@@ -3,48 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asesores en Emergencias</title>
+    <title>Asesores en Emergencias - Capacitación en Atención Prehospitalaria</title>
+    <meta name="description" content="Asesores en Emergencias - Expertos en capacitación y consultoría en atención prehospitalaria y manejo de emergencias médicas.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --rojo: #C41E3A;
+            --rojo-claro: #E63950;
+            --rojo-oscuro: #9B1830;
+            --gris: #3D3D3D;
+            --gris-claro: #4A4A4A;
+            --negro: #000000;
+            --blanco: #ffffff;
+        }
+        
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #2d1b1b 0%, #4a1c1c 100%);
+            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--negro);
+            min-height: 100vh;
+            color: var(--blanco);
+        }
+        
+        .hero {
             min-height: 100vh;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            color: white;
-        }
-        .container {
             text-align: center;
             padding: 2rem;
+            background: 
+                radial-gradient(ellipse at 50% 30%, rgba(196, 30, 58, 0.15) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 80%, rgba(61, 61, 61, 0.2) 0%, transparent 40%),
+                var(--negro);
         }
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(90deg, #ff6b6b 0%, #feca57 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        p {
-            font-size: 1.25rem;
-            opacity: 0.8;
+        
+        .logo {
+            max-width: 350px;
+            width: 90%;
             margin-bottom: 2rem;
         }
-        .badge {
+        
+        .tagline {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--rojo-claro);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .description {
+            font-size: 1.1rem;
+            max-width: 600px;
+            line-height: 1.6;
+            opacity: 0.85;
+            margin-bottom: 2.5rem;
+        }
+        
+        .cta-button {
             display: inline-block;
-            background: rgba(255,255,255,0.1);
-            padding: 0.5rem 1rem;
-            border-radius: 2rem;
+            background: linear-gradient(135deg, var(--rojo) 0%, var(--rojo-claro) 100%);
+            color: var(--blanco);
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 50px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(196, 30, 58, 0.4);
+        }
+        
+        .services {
+            display: flex;
+            gap: 2rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .service {
+            background: linear-gradient(135deg, rgba(61,61,61,0.3) 0%, rgba(61,61,61,0.1) 100%);
+            padding: 1.5rem;
+            border-radius: 12px;
+            max-width: 200px;
+            border: 1px solid rgba(196, 30, 58, 0.3);
+            transition: border-color 0.3s;
+        }
+        
+        .service:hover {
+            border-color: var(--rojo);
+        }
+        
+        .service-icon {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .service h3 {
+            color: var(--rojo-claro);
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+        
+        .service p {
+            font-size: 0.85rem;
+            opacity: 0.7;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: var(--gris);
             font-size: 0.875rem;
+        }
+        
+        footer a {
+            color: var(--rojo-claro);
+            text-decoration: none;
+        }
+        
+        @media (max-width: 600px) {
+            .tagline { font-size: 1.1rem; letter-spacing: 1px; }
+            .description { font-size: 1rem; }
+            .services { gap: 1rem; }
+            .service { max-width: 150px; padding: 1rem; }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🚑 Asesores en Emergencias</h1>
-        <p>Consultoría y capacitación en medicina de emergencias</p>
-        <span class="badge">🚧 Próximamente</span>
-    </div>
+    <section class="hero">
+        <img src="https://drive.google.com/uc?export=view&id=1HZQIr8S4UlZnEZc3xl3NSXeQmhEgyp49" alt="Asesores en Emergencias Logo" class="logo">
+        
+        <p class="tagline">Expertos en Emergencias</p>
+        
+        <p class="description">
+            Más de 20 años formando profesionales en atención prehospitalaria. 
+            Cursos, certificaciones y consultoría especializada para servicios 
+            de emergencias médicas y equipos de primera respuesta.
+        </p>
+        
+        <a href="https://www.emergencias.com.mx" class="cta-button">Sitio Principal</a>
+        
+        <div class="services">
+            <div class="service">
+                <div class="service-icon">🚑</div>
+                <h3>Prehospitalario</h3>
+                <p>Capacitación para equipos de ambulancias</p>
+            </div>
+            <div class="service">
+                <div class="service-icon">❤️</div>
+                <h3>ACLS / BLS</h3>
+                <p>Certificaciones en soporte vital</p>
+            </div>
+            <div class="service">
+                <div class="service-icon">🏢</div>
+                <h3>Consultoría</h3>
+                <p>Asesoría para instituciones de salud</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>© 2026 Asesores en Emergencias · <a href="https://www.emergencias.com.mx">www.emergencias.com.mx</a></p>
+    </footer>
 </body>
 </html>
