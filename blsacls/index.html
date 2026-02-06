@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paquete BLS + ACLS - Certifícate en Querétaro | Asesores en Emergencias</title>
+    <meta name="description" content="Domina la RCP de alta calidad y el manejo avanzado de emergencias cardiovasculares. Certificación oficial AHA - Fechas 2026 disponibles.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --rojo: #C41E3A;
+            --rojo-claro: #E63950;
+            --rojo-oscuro: #9B1830;
+            --blanco: #ffffff;
+            --negro: #000000;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #1a1a2e;
+            color: var(--blanco);
+            line-height: 1.6;
+        }
+        
+        .hero {
+            min-height: 100vh;
+            background: 
+                linear-gradient(135deg, rgba(26, 26, 46, 0.85), rgba(0, 0, 0, 0.75)),
+                url('../assets/blsacls-hero.jpg') center/cover;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        
+        .logo {
+            max-width: 200px;
+            margin-bottom: 3rem;
+        }
+        
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        
+        .hero-title {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+        
+        .hero-subtitle {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: rgba(255, 255, 255, 0.95);
+        }
+        
+        .hero-description {
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            font-weight: 400;
+            margin-bottom: 3rem;
+            color: rgba(255, 255, 255, 0.85);
+        }
+        
+        .fechas-box {
+            background: rgba(0, 0, 0, 0.6);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            backdrop-filter: blur(10px);
+            max-width: 600px;
+        }
+        
+        .fechas-box h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--blanco);
+        }
+        
+        .fechas-list {
+            font-size: 1.2rem;
+            font-weight: 600;
+            line-height: 2;
+        }
+        
+        .incluye-section {
+            margin-bottom: 3rem;
+        }
+        
+        .incluye-section h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+        
+        .incluye-list {
+            list-style: none;
+            font-size: 1.1rem;
+        }
+        
+        .incluye-list li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .incluye-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--rojo);
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        
+        .incluye-list strong {
+            color: var(--blanco);
+            font-weight: 700;
+        }
+        
+        .precio {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .precio strong {
+            font-size: 2rem;
+            color: var(--blanco);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: var(--rojo);
+            color: var(--blanco);
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 1.5rem 3rem;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(196, 30, 58, 0.4);
+            margin-bottom: 1rem;
+        }
+        
+        .cta-button:hover {
+            background: var(--rojo-claro);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(196, 30, 58, 0.6);
+        }
+        
+        .cta-subtitle {
+            display: block;
+            font-size: 1rem;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 0.5rem;
+        }
+        
+        .modalidad {
+            background: rgba(196, 30, 58, 0.1);
+            border-left: 4px solid var(--rojo);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 10px;
+            font-size: 1rem;
+        }
+        
+        .modalidad strong {
+            color: var(--blanco);
+        }
+        
+        .target-audience {
+            font-style: italic;
+            font-size: 1.1rem;
+            margin: 2rem 0;
+            color: rgba(255, 255, 255, 0.85);
+        }
+        
+        .contacto {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .contacto a {
+            color: var(--blanco);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .contacto a:hover {
+            color: var(--rojo);
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                padding: 1.5rem;
+            }
+            
+            .logo {
+                max-width: 150px;
+            }
+            
+            .fechas-box {
+                padding: 1.5rem;
+            }
+            
+            .cta-button {
+                font-size: 1.2rem;
+                padding: 1.2rem 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <img src="../assets/logo.png" alt="Asesores en Emergencias" class="logo">
+        
+        <div class="hero-content">
+            <h1 class="hero-title">PAQUETE<br>BLS + ACLS</h1>
+            <h2 class="hero-subtitle">Certifícate en Querétaro</h2>
+            <p class="hero-description">
+                Domina la RCP de alta calidad y el manejo avanzado de emergencias cardiovasculares.<br>
+                <strong>Entrenamiento práctico • Escenarios reales • Certificación oficial AHA</strong>
+            </p>
+            
+            <div class="fechas-box">
+                <h3>Fechas disponibles (2 días)</h3>
+                <div class="fechas-list">
+                    28 y 29 de marzo<br>
+                    25 y 26 de abril<br>
+                    23 y 24 de mayo<br>
+                    27 y 28 de junio
+                </div>
+            </div>
+            
+            <div class="incluye-section">
+                <h3>¿Qué incluye tu paquete?</h3>
+                <ul class="incluye-list">
+                    <li><strong>HeartCode® BLS (AHA):</strong> acceso en línea a tu ritmo.</li>
+                    <li><strong>BLS:</strong> práctica y evaluación (RCP, DEA, ventilación, atragantamiento).</li>
+                    <li><strong>ACLS:</strong> manejo avanzado del paro y emergencias cardiopulmonares; trabajo en equipo y toma de decisiones.</li>
+                    <li><strong>Manual eBook.</strong></li>
+                    <li><strong>2 eCards oficiales AHA:</strong> BLS Provider + ACLS Provider.</li>
+                </ul>
+            </div>
+            
+            <div class="modalidad">
+                <strong>Modalidad:</strong> HeartCode BLS (en línea) + práctica presencial (skills session) + ACLS con escenarios y evaluación.
+            </div>
+            
+            <p class="precio">
+                <strong>Inversión: $4,500 MXN + IVA</strong><br>
+                Incluye: HeartCode® BLS (en línea) + BLS (práctica) + ACLS + eBook + 2 certificaciones (eCards)
+            </p>
+            
+            <p class="target-audience">
+                Para médicos, enfermería, paramédicos, estudiantes y personal clínico.
+            </p>
+            
+            <a href="https://wa.me/5214422184424?text=Hola,%20me%20interesa%20el%20Paquete%20BLS%20+%20ACLS" class="cta-button">
+                REGISTRO (CUPO LIMITADO)
+                <span class="cta-subtitle">Escanea o entra al formulario</span>
+            </a>
+            
+            <div class="contacto">
+                <p>
+                    <strong>WhatsApp:</strong> <a href="https://wa.me/5214422184424">442 218 44 24</a><br>
+                    <strong>Email:</strong> <a href="mailto:contactoaha@emergencias.com.mx">contactoaha@emergencias.com.mx</a><br>
+                    <strong>Web:</strong> <a href="https://www2.emergencias.com.mx">www2.emergencias.com.mx</a><br>
+                    <strong>Instagram:</strong> <a href="https://instagram.com/aeemergencias">@aeemergencias</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
